@@ -103,21 +103,6 @@ const Services = () => {
             </motion.div>
                 ))
             }
-            {/* <div className='flex flex-col items-center gap-2'>
-                <img className='w-52 img-shadow2 hover:scale-110 transition-all duration-300' src={coffee1} alt="" />
-                <p className='mt-5 text-primary text-2xl font-bold'>Black Coffee</p>
-                <p className='w-[80%] text-center'>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-                <img className='w-52 img-shadow2 hover:scale-110 transition-all duration-300' src={coffee2} alt="" />
-                <p className='mt-5 text-primary text-2xl font-bold'>Hot Coffee</p>
-                <p className='w-[80%] text-center'>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-                <img className='w-52 img-shadow2 hover:scale-110 transition-all duration-300' src={coffee1} alt="" />
-                <p className='mt-5 text-primary text-2xl font-bold'>Cold Coffee</p>
-                <p className='w-[80%] text-center'>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div> */}
         </motion.div>
     </div>
   )
