@@ -2,7 +2,7 @@ import React from 'react'
 import coffee1 from '../assets/coffee/coffee1.png'
 import coffee2 from '../assets/coffee/coffee3.png'
 import { motion } from 'framer-motion'
-import { image } from 'framer-motion/client'
+
 
 const servicesData = [
     {

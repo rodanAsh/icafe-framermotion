@@ -26,7 +26,7 @@ const Hero = () => {
                     <div className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28'>
                         <motion.h1 
                             initial={{opacity:0,y:-100}}
-                            animate={{opacity:1,y:0}}
+                            whileInView={{opacity:1,y:0}}
                             transition={{
                                 type:'spring',
                                 stiffness:100,
@@ -39,7 +39,7 @@ const Hero = () => {
                         </motion.h1>
                         <motion.div 
                             initial={{opacity:0,y:100}}
-                            animate={{opacity:1,y:0}}
+                            whileInView={{opacity:1,y:0}}
                             transition={{
                                 type:'spring',
                                 stiffness:100,
@@ -59,7 +59,8 @@ const Hero = () => {
                     <div className='relative'>
                         <motion.img 
                             initial={{opacity:0,scale:0}}
-                            animate={{opacity:1,scale:1}}
+                            whileInView={{opacity:1,scale:1}}
+                            viewport={{once:true}}
                             transition={{
                                 type:'spring',
                                 stiffness:100,
@@ -73,7 +74,7 @@ const Hero = () => {
                         {/* Orange Circle Ring */}
                         <motion.div 
                             initial={{opacity:0,y:100}}
-                            animate={{opacity:1,y:0}}
+                            whileInView={{opacity:1,y:0}}
                             transition={{
                                 type:'spring',
                                 stiffness:100,
@@ -86,7 +87,7 @@ const Hero = () => {
                         {/* big text section */}
                         <motion.div 
                             initial={{opacity:0,x:-100}}
-                            animate={{opacity:1,x:0}}
+                            whileInView={{opacity:1,x:0}}
                             transition={{
                                 type:'spring',
                                 stiffness:100,
@@ -99,26 +100,30 @@ const Hero = () => {
                         </motion.div>
                     </div>
                     {/* Right Side */}
-                    <motion.div 
-                        initial={{opacity:0,y:100}}
-                        animate={{opacity:1,y:0}}
-                        transition={{
-                            type:'spring',
-                            stiffness:100,
-                            damping:10,
-                            delay:1.2
-                        }}
-                        className='text-lightOrange hidden md:block mt-[100px]  p-4 space-y-28'
-                    >
-                        <h1 className='opacity-0 text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
-                        <div className='relative'>
-                            <div className='relative z-10 space-y-4'>
-                                <h1 className='text-2xl'>Blvck Tumbler</h1>
-                                <h1 className='text-sm opacity-55 leading-loose'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aspernatur,Delectus aspernatur, Delectus aspernatur,Delectus aspernatur,</h1>
+                    <div className='hidden lg:block'>
+                        <motion.div 
+                            initial={{opacity:0,y:100}}
+                            whileInView={{opacity:1,y:0}}
+                            transition={{
+                                type:'spring',
+                                stiffness:100,
+                                damping:10,
+                                delay:1.2
+                            }}
+                            className='text-lightOrange hidden md:block mt-[100px]  p-4 space-y-28'
+                        >
+                            <h1 className='opacity-0 text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
+                            <div className='relative'>
+                                <div className='relative z-10 space-y-4'>
+                                    <h1 className='text-2xl'>Blvck Tumbler</h1>
+                                    <h1 className='text-sm opacity-55 leading-loose'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aspernatur,Delectus aspernatur, Delectus aspernatur,Delectus aspernatur,</h1>
+                                </div>
+                                <div className='absolute -top-6 -right-10 w-[250px] h-[190px] bg-darkGray/50'></div>
                             </div>
-                            <div className='absolute -top-6 -right-10 w-[250px] h-[190px] bg-darkGray/50'></div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                        <div></div>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -128,7 +133,7 @@ const Hero = () => {
                     <motion.div 
                         initial={{x:'100%'}}
                         whileInView={{x:0}}
-                        className='absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-10'
+                        className='absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to-primaryDark/80 backdrop-blur-sm z-50'
                     >
                     <div className='w-full h-full flex flex-col justify-center items-center gap-6 text-white'>
                         {/* line */}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Navbar = ({setIsSideMenu}) => {
   return (
-    <nav className='absolute top-0 left-0 w-full pt-10 text-white z-40'>
+    <nav className='absolute top-0 left-0 w-full pt-10 text-white z-[999]'>
         <div className="container">
             <div className='flex items-center justify-between'>
                 {/* logo section */}
@@ -24,7 +24,7 @@ const Navbar = ({setIsSideMenu}) => {
 
                 {/* Hamburger menu section */}
                 <motion.div
-                onClick={() => setIsSideMenu(prev => !prev)}
+                    onClick={() => setIsSideMenu(prev => !prev)}
                     initial={{opacity:0,y:-100}}
                     animate={{opacity:1,y:0}}
                     transition={{
